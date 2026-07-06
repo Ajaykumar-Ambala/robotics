@@ -50,9 +50,11 @@ header {
 }
 .nav a:hover {
     color: var(--accent);
+    opacity: 0.5;
     text-decoration: none;
-    animation: slideTop 0.5s ease forwards;
-    text-shadow: inset 0 0 10px var(--primary), 0 0 20px var(--primary), 0 0 30px var(--primary);
+    transition: opacity 0.5s ease;
+    /* animation: slideTop 0.5s ease forwards; */
+    /* text-shadow: inset 0 0 10px var(--primary), 0 0 20px var(--primary), 0 0 30px var(--primary); */
 }
 
 .logo img {
@@ -84,6 +86,8 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
+    width: max
+;
 }
 .card1 {
     /* background-color: var(--primary-bg); */
@@ -169,7 +173,7 @@ button:hover {
     margin: 0px;
     height:auto;
     width: auto;
-    border:2px solid var(--primary);
+    /* border:2px solid var(--primary); */
 
 }
 .about-mini-container{
@@ -177,7 +181,7 @@ button:hover {
     margin: 0px;
     height:auto;
     width: 50%;
-    border:2px solid var(--primary);
+    /* border:2px solid var(--primary); */
 }
 .u{
     text-decoration: underline 2px solid var(--primary);
@@ -207,7 +211,7 @@ button:hover {
     margin-left:30px
 }
 .sec3{
-    background-color: var(--primary-bg);
+    /* background-color: var(--primary-bg); */
     color: var(--primary-text);
     margin: 0px;
     padding: 0px;
@@ -229,18 +233,42 @@ button:hover {
     height:auto;
     width: auto;
     border-radius: 8px;
+    opacity: 2;
     /* border:  solid var(--primary); */
     gap: 10px;
     /* box-shadow: inset 0 0 10px var(--primary), 0 0 10px var(--primary), 0 0 10px var(--primary); */
 
 }
 .cart1:hover{
-    background-color: var(--accent);
-    color: var(--primary-bg);
+    /* background-color: var(--accent); */
+    /* color: var(--primary-bg); */
     cursor: pointer;
     animation: slideTop 0.5s ease forwards;
+    transition: opacity 1s ease;
+    transform: translateY(0);
     transition: 1s;
     box-shadow: inset 0 0 10px var(--primary), 0 0 20px var(--primary), 0 0 30px var(--primary);
+    opacity: 0.8;
 }
-
-
+.cart2{
+    text-align: center;
+    flex: 1;
+    margin: 2px;
+    padding: 2px;
+    gap: 10px;
+    opacity: 1;
+    cursor: pointer;
+    transition:0s;
+    transition: opacity 0.5ms;
+}
+.cart2:hover{
+    /* background-color: var(--accent); */
+    /* color: var(--primary-bg); */
+    cursor: pointer;
+    animation: slideTop 0.5s ease forwards;
+    transition: opacity 1s ease;
+    transform: translateY(0);
+    transition: 1s;
+    box-shadow: inset 0 0 10px var(--primary), 0 0 20px var(--primary), 0 0 30px var(--primary);
+    opacity: 0.8;
+}
